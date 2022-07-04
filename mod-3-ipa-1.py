@@ -135,7 +135,7 @@ def vigenere_cipher(message, key):
         keyphrase = key * (len(message)//len(key)) + key[:(len(message) % len(key))]
     for letter in message:
         if letter != " ":
-            new letter = ord(letter) + (ord(keyphrase[counter]} - 65)
+            new letter = ord(letter) + (ord(keyphrase[counter] - 65)
                     if new_letter > 90:
                         new_letter -=26
         else:

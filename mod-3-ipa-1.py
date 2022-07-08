@@ -239,4 +239,9 @@ def scytale_decipher(message, shift):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-    pass
+  decoded = ""
+    for i in range(0,len(message)):
+        columns = len(message)//shift
+        place = (i // columns) + shift * (i % columns)
+        decoded += message[place]
+    return decoded

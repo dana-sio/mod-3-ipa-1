@@ -104,7 +104,7 @@ def shift_by_letter(letter, letter_shift):
     
     if letter == ' ':
         return (' ')
-    else : return(chr((((ord(letter)-65+shift)%26)+65)))
+    else: return(chr((((ord(letter)-65+(ord(letter_shift)-65))%26)+65)))
 
 def vigenere_cipher(message, key):
     '''Vigenere Cipher. 
